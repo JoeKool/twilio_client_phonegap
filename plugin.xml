@@ -36,6 +36,14 @@
                 target-dir="src/com/phonegap/plugins/twilioclient" />
          <source-file src="src/android/com/phonegap/plugins/twilioclient/TCPlugin.java"
                 target-dir="src/com/phonegap/plugins/twilioclient" />
+
+      <!-- copy opentok sdk -->
+      <source-file src="twilio-sdk/twilioclient-android/libs/twilioclient-android.jar" target-dir="libs/" />
+      <source-file src="twilio-sdk/twilioclient-android/libs/armeabi/libtwilio-native.so" target-dir="libs/armeabi" />
+      <source-file src="twilio-sdk/twilioclient-android/libs/armeabi-v7a/libtwilio-native.so" target-dir="libs/armeabi-v7a" />
+      <source-file src="twilio-sdk/twilioclient-android/libs/mips/libtwilio-native.so" target-dir="libs/mips" />
+      <source-file src="twilio-sdk/twilioclient-android/libs/x86/libtwilio-native.so" target-dir="libs/x86" />
+
         <info>
 This plugin also uses the Android Support Library V4. You only need one copy of this library (a JAR file) in your libs directory. See http://developer.android.com/tools/support-library/index.html for information about how to download this library to your computer. Then copy android-support-v4.jar to your libs folder.        
         
