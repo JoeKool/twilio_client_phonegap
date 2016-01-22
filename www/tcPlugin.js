@@ -1,4 +1,3 @@
-(function() {
     var delegate = {}
     var TwilioPlugin = {
         Device: function() {
@@ -139,11 +138,7 @@
         Cordova.exec(fn, null, "TCPlugin", "connectionParameters", []);
     }
 
-    TwilioPlugin.install = function() {
-        if (!window.Twilio) window.Twilio = {};
-        if (!window.Twilio.Device) window.Twilio.Device = new TwilioPlugin.Device();
-        if (!window.Twilio.Connection) window.Twilio.Connection = new TwilioPlugin.Connection();
-    }
- TwilioPlugin.install();
-
-})()
+    module.exports = { 
+       Device: new TwilioPlugin.Device(), 
+       Connection: new TwilioPlugin.Connection()
+    };
