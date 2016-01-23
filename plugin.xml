@@ -38,7 +38,6 @@
                 target-dir="src/com/phonegap/plugins/twilioclient" />
 
       <!-- copy opentok sdk -->
-      <source-file src="twilio-sdk/twilioclient-android/libs/android-support-v4.jar" target-dir="libs/" />
       <source-file src="twilio-sdk/twilioclient-android/libs/twilioclient-android.jar" target-dir="libs/" />
       <source-file src="twilio-sdk/twilioclient-android/libs/armeabi/libtwilio-native.so" target-dir="libs/armeabi" />
       <source-file src="twilio-sdk/twilioclient-android/libs/armeabi-v7a/libtwilio-native.so" target-dir="libs/armeabi-v7a" />
